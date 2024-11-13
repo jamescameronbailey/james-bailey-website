@@ -14,38 +14,40 @@
         /* Customer Reviews Styling */
         .review-images {
             display: flex;
-            flex-wrap: wrap; /* Allows images to wrap to a new line if necessary */
-            gap: 20px; /* Adds space between images */
-            justify-content: center; /* Centers the images horizontally */
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
         }
         .review-images img {
-            width: 200px; /* Adjust as needed */
+            width: 200px;
             height: 200px;
-            border-radius: 10px; /* Optional: adds rounded edges */
-            cursor: pointer; /* Makes it clear the image is clickable */
-            transition: transform 0.2s; /* Adds a slight hover effect */
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.2s;
         }
         .review-images img:hover {
-            transform: scale(1.05); /* Slight zoom effect on hover */
+            transform: scale(1.05);
         }
 
         /* Lightbox Styling */
         .lightbox {
-            display: none; /* Hidden by default */
+            display: none;
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(0, 0, 0, 0.95); /* Darker background for better visibility */
             justify-content: center;
             align-items: center;
             z-index: 10;
+            overflow: hidden;
         }
         .lightbox img {
             max-width: 90%;
             max-height: 90%;
             border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
         }
         .lightbox:target {
             display: flex; /* Show lightbox when targeted */
@@ -71,7 +73,6 @@
     <section class="reviews">
         <h2>Customer Reviews</h2>
         <div class="review-images">
-            <!-- Each image links to a lightbox anchor -->
             <a href="#img1"><img src="pictures/r1.JPG" alt="Customer 1"></a>
             <a href="#img2"><img src="pictures/r2.JPG" alt="Customer 2"></a>
             <a href="#img3"><img src="pictures/r3.JPG" alt="Customer 3"></a>
