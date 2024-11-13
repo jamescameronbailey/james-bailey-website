@@ -14,43 +14,13 @@
         /* Customer Reviews Styling */
         .review-images {
             display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
+            gap: 20px; /* Adds space between images */
+            justify-content: center; /* Centers the images horizontally */
         }
         .review-images img {
-            width: 200px;
+            width: 200px; /* Adjust as needed */
             height: 200px;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: transform 0.2s;
-        }
-        .review-images img:hover {
-            transform: scale(1.05);
-        }
-
-        /* Lightbox Styling */
-        .lightbox {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.95); /* Darker background for better visibility */
-            justify-content: center;
-            align-items: center;
-            z-index: 10;
-            overflow: hidden;
-        }
-        .lightbox img {
-            max-width: 90%;
-            max-height: 90%;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-        }
-        .lightbox:target {
-            display: flex; /* Show lightbox when targeted */
+            border-radius: 10px; /* Optional: adds rounded edges */
         }
     </style>
 </head>
@@ -73,51 +43,28 @@
     <section class="reviews">
         <h2>Customer Reviews</h2>
         <div class="review-images">
-            <a href="#img1"><img src="pictures/r1.JPG" alt="Customer 1"></a>
-            <a href="#img2"><img src="pictures/r2.JPG" alt="Customer 2"></a>
-            <a href="#img3"><img src="pictures/r3.JPG" alt="Customer 3"></a>
-            <a href="#img4"><img src="pictures/r4.JPG" alt="Customer 4"></a>
-            <a href="#img5"><img src="pictures/r5.JPG" alt="Customer 5"></a>
-            <a href="#img6"><img src="pictures/r6.JPG" alt="Customer 6"></a>
-            <a href="#img7"><img src="pictures/r7.JPG" alt="Customer 7"></a>
+            <div class="review">
+                <img src="pictures/r1.JPG" alt="Customer 1">
+            </div>
+            <div class="review">
+                <img src="pictures/r2.JPG" alt="Customer 2">
+            </div>
+            <div class="review">
+                <img src="pictures/r3.JPG" alt="Customer 3">
+            </div>
+            <div class="review">
+                <img src="pictures/r4.JPG" alt="Customer 4">
+            </div>
+            <div class="review">
+                <img src="pictures/r5.JPG" alt="Customer 5">
+            </div>
+            <div class="review">
+                <img src="pictures/r6.JPG" alt="Customer 6">
+            </div>
+            <div class="review">
+                <img src="pictures/r7.JPG" alt="Customer 7">
+            </div>
         </div>
     </section>
-
-    <!-- Lightbox for each image -->
-    <div id="img1" class="lightbox">
-    <a href="#!" class="lightbox">
-        <img src="https://via.placeholder.com/800" alt="Test Image"> <!-- Test Image -->
-    </a>
-    </div>
-    <div id="img2" class="lightbox">
-        <a href="#!" class="lightbox">
-            <img src="pictures/r2.JPG" alt="Customer 2">
-        </a>
-    </div>
-    <div id="img3" class="lightbox">
-        <a href="#!" class="lightbox">
-            <img src="pictures/r3.JPG" alt="Customer 3">
-        </a>
-    </div>
-    <div id="img4" class="lightbox">
-        <a href="#!" class="lightbox">
-            <img src="pictures/r4.JPG" alt="Customer 4">
-        </a>
-    </div>
-    <div id="img5" class="lightbox">
-        <a href="#!" class="lightbox">
-            <img src="pictures/r5.JPG" alt="Customer 5">
-        </a>
-    </div>
-    <div id="img6" class="lightbox">
-        <a href="#!" class="lightbox">
-            <img src="pictures/r6.JPG" alt="Customer 6">
-        </a>
-    </div>
-    <div id="img7" class="lightbox">
-        <a href="#!" class="lightbox">
-            <img src="pictures/r7.JPG" alt="Customer 7">
-        </a>
-    </div>
 </body>
 </html>
